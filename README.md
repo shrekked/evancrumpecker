@@ -1,5 +1,5 @@
 # Responsive Resume
-Beautiful Responsive resume cv website 📄 using html, css and javascript. Light dark mode 🌗 and PDF export. Check it out on [evan.crumpecker.com](https://www.evancrumpecker.com)
+Beautiful Responsive resume cv website 📄 using html, css and javascript. Light dark mode 🌗 and PDF export. Check it out on [evancrumpecker.com](https://www.evancrumpecker.com)
 
 Project idea and base template from Bedimcode. Checkout their Youtube and Github below!
 
