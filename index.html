@@ -1,96 +1,624 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
+    <!--========== REMIXICONS ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css"
+        crossorigin="">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>Responsive resume cv</title>
+</head>
+
+<body class="dark-theme">
+    <div class="resume container">
         <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Evan</a>
+                <div class="div nav__menu">
+                    <ul class="nav__list">
+                        <li class="li nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-line"></i>
+                            </a>
+                        </li>
+                        <li class="li nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="ri-user-line"></i>
+                            </a>
+                        </li>
+                        <li class="li nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-file-list-line"></i>
+                            </a>
+                        </li>
+                        <li class="li nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class="ri-briefcase-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Theme change button -->
+                </div>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </nav>
         </header>
 
-        <main class="l-main bd-container">
+        <main class="resume__main resume" id="area-cv">
             <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        
-    
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
+            <section class="home" id="home">
+                <div class="home__container grid">
+                    <h1 class="home__name">
+                        Hello, I'm <br>
+                        Evan Crumpecker
+                    </h1>
+                    <div class="home__blob">
+                        <div class="home__perfil">
+                            <img src="assets/img/profile1.webp" alt="home image" class="home__img">
+                        </div>
+                        <svg class="home__star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path
+                                d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
+                        </svg>
+                        <svg class="home__star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path
+                                d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
+                        </svg>
 
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
-
-
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
-                    </section>
-
+                        <h1 class="home__profession">
+                            <span class="line1">FRONTEND</span> <br>
+                            <span class="line2"> DEVELOPER</span>
+                        </h1>
+                    </div>
                 </div>
+            </section>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
+            <div class="resume__left">
 
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
+                <!--========== ABOUT ==========-->
+                <section class="about section" id="about">
+                    <h2 class="section__title">
+                        Personal Info
+                    </h2>
+                    <div class="about__container grid">
+                        <p>
+                            Hi, I'm Evan Crumpecker, based in Chattanooga, Tennessee. I am a Frontend Developer with a
+                            passion for creating beautiful and functional websites, and over 8 years experience.
+                            As a self-taught developer, I've repeatedly demonstrated my drive to learn and master new
+                            skills.
+                            My various experiences as a team leader, team member, and a self-directed contractor make me
+                            an asset on any team.
+                        </p>
 
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
+                        <a href="assets/pdf/evanc_greyscale.pdf" download class="about__button">
+                            Download Resume <i class="ri-file-download-line"></i>
+                        </a>
+                        <!--========== SOCIAL ==========-->
+                        <ul class="about__social">
+                            <li>
+                                <a href="https://github.com/shrekked" target="_blank" class="about__social-link">
+                                    <i class="ri-github-fill"></i> Github
+                                </a>
+                            </li>
+                            <li> | </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/evan-crumpecker/" target="_blank"
+                                    class="about__social-link">
+                                    <i class="ri-linkedin-box-line"></i> Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
-                </div>
-            </div>        
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section__title">
+                        SKILLS
+                    </h2>
+                    <div class="skills_container">
+                        <div class="skills__content">
+                            <ul class="skills__list">
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> HTML & CSS
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> SASS / SCSS
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> Javascript
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> React
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> Angular
+                                </li>
+                            </ul>
+                            <ul class="skills__list">
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> Git & Github
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> GraphQL
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> REST APIs
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> FIGMA
+                                </li>
+                                <li class="resume__title">
+                                    <i class="ri-arrow-drop-right-line"></i> Page Speed
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="work section" id="work">
+                    <h2 class="section__title">
+                        WORK EXPERIENCE
+                    </h2>
+                    <div class="work__container grid">
+                        <div>
+                            <h2 class="resume__title">
+                                <i class="ri-arrow-drop-right-line"></i> Support Engineer Contractor
+                            </h2>
+                            <div class="resume__data">
+                                <i>
+                                    Searchspring - Remote / 2022 - Present
+                                </i>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Provide frontend development and web
+                                    application support for over 1000
+                                    Enterprise level E-Commerce websites.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Provide rapid response support for
+                                    high stakes, time-sensitive issues.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Work with design agencies to implement
+                                    FIGMA mockups / designs in proprietary AngularJS and React web applications.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Provide specialized support for a
+                                    suite of E-Commerce products, including Search, Navigation, Recommendations, and
+                                    Merchandising.
+                                </p>
+                                <br>
+                                <p>
+                                    Utilize a deep understand of Searchspring's software, as well as
+                                    the underlying web development technologies, to
+                                    facilitate communication between
+                                    internal and external stakeholders in order to achieve best in class customer
+                                    support.
+                                </p>
+                                <br>
+                                <strong id="technology__label__1" class="technologies__used active"
+                                    data-grid="technology__grid__1">
+                                    <i class="ri-add-line"></i>
+                                    <i class="ri-subtract-line"></i>
+                                    Technologies Used</strong>
+                                <div id="technology__grid__1" class="resume__grid grid active">
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Liquid
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Javascript
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AngularJS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            HTML
+                                        </li>
+                                        <li class="resume__technologies">
+                                            CSS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Confluence
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Slack
+                                        </li>
+                                        <li class="resume__technologies">
+                                            FIGMA
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            GraphQL
+                                        </li>
+                                        <li class="resume__technologies">
+                                            PHP
+                                        </li>
+                                        <li class="resume__technologies">
+                                            React
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Kanban
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Git
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Github
+                                        </li>
+                                        <li class="resume__technologies">
+                                            SumoLogic
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Teamwork
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Handlebars
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Twig
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Asana
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Zendesk
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AWS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Docker
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Linux
+                                        </li>
+                                        <li class="resume__technologies">
+                                            MacOS
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="resume__title">
+                                <i class="ri-arrow-drop-right-line"></i> Shopify Developer
+                            </h2>
+                            <div class="resume__data">
+                                <i>
+                                    Ritual Pursuits - Chattanooga, TN / 2021 - Present
+                                </i>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Provide ongoing support for Ritual
+                                    Pursuits.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Created custom Shopify themes and
+                                    integrated 3rd party apps.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Implemented functionality to support
+                                    both wholesale and retail customers.
+                                </p>
+                                <br>
+                                <p>
+                                    Created user groups and template logic
+                                    to hide wholesale prices from retail
+                                    customers, and implemented custom design elements where desired. Implemented custom
+                                    data lookup via REST API for 3rd party review provider application, and wrote a
+                                    script that pulled product reviews from multiple reports in Etsy, and synced them to
+                                    the Shopify store. Helped customer achieve all key business goals.
+                                </p>
+                                <br>
+                                <strong id="technology__label__2" class="technologies__used active"
+                                    data-grid="technology__grid__2"><i class="ri-add-line"></i><i
+                                        class="ri-subtract-line"></i>
+                                    Technologies Used</strong>
+                                <div id="technology__grid__2" class="resume__grid grid active">
+                                    <ul class="resume__list short__grid">
+                                        <li class="resume__technologies">
+                                            Liquid
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Javascript
+                                        </li>
+                                        <li class="resume__technologies">
+                                            HTML
+                                        </li>
+                                        <li class="resume__technologies">
+                                            CSS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            GraphQL
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Shopify
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="resume__title">
+                                <i class="ri-arrow-drop-right-line"></i>Support Engineering Team Lead
+                            </h2>
+                            <div class="resume__data">
+                                <i>
+                                    Searchspring - Remote (Colorado Springs, CO, Chattanooga, TN) / 2018 - 2021
+                                </i>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Touched
+                                    over 7,000 support tickets with an average Customer Satisfaction rating of 98%.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Led the support team through a
+                                    merger, which almost doubled our customer base, and grew the support team from 3 to
+                                    9 team members, while solving between 400 - 600 support tickets a month as a team.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> While acting as the support team lead
+                                    in a remote work environment, my team met all monthly KPI's, which were based on
+                                    response time, ticket volume, and customer satisfaction.
+                                </p>
+                                <br>
+                                <p>
+                                    Demonstrated adaptability as the company rapidly grew from a small, 25-person
+                                    startup to a
+                                    medium-sized company with over 130 employees. Trained and mentored new support
+                                    engineering hires, and created onboarding processes for the
+                                    support team.
+                                </p>
+                                <br>
+                                <strong id="technology__label__3" class="technologies__used active"
+                                    data-grid="technology__grid__3"><i class="ri-add-line"></i><i
+                                        class="ri-subtract-line"></i>
+                                    Technologies Used</strong>
+                                <div id="technology__grid__3" class="resume__grid grid active">
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Liquid
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Javascript
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AngularJS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            HTML
+                                        </li>
+                                        <li class="resume__technologies">
+                                            CSS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Confluence
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Slack
+                                        </li>
+                                        <li class="resume__technologies">
+                                            FIGMA
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            GraphQL
+                                        </li>
+                                        <li class="resume__technologies">
+                                            PHP
+                                        </li>
+                                        <li class="resume__technologies">
+                                            React
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Kanban
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Git
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Github
+                                        </li>
+                                        <li class="resume__technologies">
+                                            SumoLogic
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Teamwork
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Handlebars
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Twig
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Asana
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Zendesk
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AWS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Docker
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Linux
+                                        </li>
+                                        <li class="resume__technologies">
+                                            MacOS
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="resume__title">
+                                <i class="ri-arrow-drop-right-line"></i>Frontend Engineer
+                            </h2>
+                            <div class="resume__data">
+                                <i>
+                                    Searchspring - Hybrid (Colorado Springs, CO) / 2014 - 2018
+                                </i>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Created functional and responsive web
+                                    applications for Searchspring's suite of
+                                    E-Commerce products.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Re-created FIGMA mockups and design
+                                    files in Searchspring's AngularJS and React applications
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Tested and implemented a new
+                                    AngularJS based integration to replace an older jQuery based integration.
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-blank-circle-fill"></i> Single-handledly tested and migrated
+                                    hundreds of customers from an older backend to a new backend.
+                                </p>
+                                <p>
+                                    Worked directly with hundreds of Enterprise level
+                                    clients to
+                                    implement their designs and custom functonality with Searchspring's software.
+                                    Facilitated growth of customer base by providing world-class software integration
+                                    support while filling multiple roles in a fast-paced environment.
+                                </p>
+                                <br>
+                                <label id="technology__label__4" class="technologies__used active"
+                                    data-grid="technology__grid__4"><i class="ri-add-line"></i><i
+                                        class="ri-subtract-line"></i>
+                                    Technologies Used</label>
+                                <div id="technology__grid__4" class="resume__grid grid active">
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Liquid
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Javascript
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AngularJS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            HTML
+                                        </li>
+                                        <li class="resume__technologies">
+                                            CSS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Confluence
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Slack
+                                        </li>
+                                        <li class="resume__technologies">
+                                            FIGMA
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            GraphQL
+                                        </li>
+                                        <li class="resume__technologies">
+                                            PHP
+                                        </li>
+                                        <li class="resume__technologies">
+                                            React
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Kanban
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Git
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Github
+                                        </li>
+                                        <li class="resume__technologies">
+                                            SumoLogic
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Teamwork
+                                        </li>
+                                    </ul>
+                                    <ul class="resume__list">
+                                        <li class="resume__technologies">
+                                            Handlebars
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Twig
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Asana
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Zendesk
+                                        </li>
+                                        <li class="resume__technologies">
+                                            AWS
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Docker
+                                        </li>
+                                        <li class="resume__technologies">
+                                            Linux
+                                        </li>
+                                        <li class="resume__technologies">
+                                            MacOS
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
+        <footer class="footer">
+            <div class="footer__container grid">
+                <div>
+                    <h3 class="footer__title">Phone</h3>
+                    <span class="footer__info">(+1) 423-582-2683</span>
+                </div>
+                <div>
+                    <h3 class="footer__title">Email</h3>
+                    <span class="footer__info">
+                        evan.crumpecker@gmail.com
+                    </span>
+                </div>
+                <div>
+                    <h3 class="footer__title">Website</h3>
+                    <a href="https://evancrumpecker.com/" target="_blank"
+                        class="footer__link">www.evancrumpecker.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-        <!--========== SCROLL TOP ==========-->
-        
+    <!--========== SCROLL TOP ==========-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>

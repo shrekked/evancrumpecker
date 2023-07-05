@@ -1,0 +1,20 @@
+{
+  "name": "job-hunt",
+  "version": "1.0.0",
+  "description": "responsive html and css resume",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "test": "",
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bedimcode/responsive-resume-cv-smith.git"
+  },
+  "author": "evan crumpecker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bedimcode/responsive-resume-cv-smith/issues"
+  },
+  "homepage": "https://github.com/bedimcode/responsive-resume-cv-smith#readme"
+}
