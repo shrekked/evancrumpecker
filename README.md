@@ -9,4 +9,4 @@ Project inspiration from Bedimcode. Checkout their Youtube and Github below!
 
 [Github]https://github.com/bedimcode
 
-![Resume cv](/preview.png)
+![Resume cv](/evan_preview.png)
