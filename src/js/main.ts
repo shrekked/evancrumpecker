@@ -78,7 +78,6 @@ techLabels.forEach((label) => {
     label.addEventListener('click', toggleTechs);
 });
 
-
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 

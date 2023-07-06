@@ -2,12 +2,15 @@
     "compilerOptions": {
         "outDir": "./dist",
         "allowJs": true,
-        "target": "es5",
+        "target": "ES6",
         "noImplicitReturns": true,
         "noImplicitAny": true,
-        "noEmitOnError": true        
+        "noEmitOnError": true,        
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "sourceMap": true     
     }, 
     "include": [
-        "./assets/js/*"
+        "./src/js/*"
     ]
 }
