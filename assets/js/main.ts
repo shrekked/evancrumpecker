@@ -3,11 +3,12 @@
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
+  	const scrollY = window.scrollY;
 
 	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
+        const currentElement = (<HTMLInputElement>current);
+		const sectionHeight = currentElement.offsetHeight,
+			  sectionTop = currentElement.offsetTop - 58,
 			  sectionId = current.getAttribute('id'),
 			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
@@ -66,9 +67,8 @@ themeButton.addEventListener('click', () => {
 })
 
 /* ==================== TOGGLE TECHNOLOGIES ==================== */
-const toggleTechs = (e) => {
-    console.log({e}, e.target.dataset.grid);
-    const label = e?.target;
+const toggleTechs = (e: Event) => {    
+    const label = (<HTMLInputElement>e?.target);
     label.classList.toggle('active');
     const grid = document.getElementById(label?.dataset?.grid);
     grid.classList.toggle('active');

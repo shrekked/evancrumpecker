@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "target": "es5",
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "noEmitOnError": true        
+    }, 
+    "include": [
+        "./assets/js/*"
+    ]
+}
