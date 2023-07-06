@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bedimcode/responsive-resume-cv-smith/issues"
   },
-  "homepage": "https://github.com/bedimcode/responsive-resume-cv-smith#readme"
+  "homepage": "https://github.com/bedimcode/responsive-resume-cv-smith#readme",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
 }
